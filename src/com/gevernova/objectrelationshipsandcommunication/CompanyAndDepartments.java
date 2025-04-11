@@ -1,63 +1,104 @@
 package com.gevernova.objectrelationshipsandcommunication;
 
 import java.util.ArrayList;
+import java.util.List;
 
-// Customer class
-class Customers {
+// Employee class
+class Employee {
     String name;
-    double balance;
 
-    Customers(String name, double balance) {
+    Employee(String name) {
         this.name = name;
-        this.balance = balance;
     }
 
-    void viewBalance() {
-        System.out.println(name + "'s Balance: ₹" + balance);
+    void showDetails() {
+        System.out.println("Employee: " + name);
     }
 }
 
-// Bank class
-class Banks {
-    String bankName;
-    ArrayList<Customers> customers = new ArrayList<>();  // Fixed to match class name
+// Department class (part of Company)
+class Department {
+    String deptName;
+    List<Employee> employees;
 
-    Banks(String bankName) {
-        this.bankName = bankName;
+    Department(String deptName) {
+        this.deptName = deptName;
+        this.employees = new ArrayList<>();
     }
 
-    void openAccount(Customers customer) {  // Fixed to match class name
-        customers.add(customer);
-        System.out.println("Account opened for " + customer.name + " in " + bankName);
+    void addEmployee(String empName) {
+        Employee emp = new Employee(empName);
+        employees.add(emp);
     }
 
-    void showAllCustomers() {
-        System.out.println("Customers of " + bankName + ":");
-        for (Customers c : customers) {
-            System.out.println("- " + c.name);
+    void showDepartmentDetails() {
+        System.out.println("Department: " + deptName);
+        for (Employee emp : employees) {
+            emp.showDetails();
         }
     }
 }
 
+// Company class (composes Departments and indirectly Employees)
+class Company {
+    String companyName;
+    List<Department> departments;
+
+    Company(String companyName) {
+        this.companyName = companyName;
+        this.departments = new ArrayList<>();
+    }
+
+    void addDepartment(String deptName) {
+        Department dept = new Department(deptName);
+        departments.add(dept);
+    }
+
+    Department getDepartment(String deptName) {
+        for (Department dept : departments) {
+            if (dept.deptName.equals(deptName)) {
+                return dept;
+            }
+        }
+        return null;
+    }
+
+    void showCompanyDetails() {
+        System.out.println("Company: " + companyName);
+        for (Department dept : departments) {
+            dept.showDepartmentDetails();
+        }
+    }
+
+    void deleteCompany() {
+        departments.clear();  // all departments and employees go out of scope
+        System.out.println(companyName + " and all its departments and employees have been deleted.");
+    }
+}
+
 // Main class
-public class CompanyAndDepartments {
+ class CompanyCompositionDemo {
     public static void main(String[] args) {
-        // Create a bank
-        Banks banka = new Banks("SBI");
+        Company company = new Company("TechNova");
 
-        // Create customers
-        Customers c1 = new Customers("Likhitha", 5000);
-        Customers c2 = new Customers("Ananya", 10000);
+        // Add departments
+        company.addDepartment("IT");
+        company.addDepartment("HR");
 
-        // Open accounts
-        banka.openAccount(c1);  // fixed variable name
-        banka.openAccount(c2);  // fixed variable name
+        // Add employees to departments
+        Department itDept = company.getDepartment("IT");
+        itDept.addEmployee("Likhitha");
+        itDept.addEmployee("Ananya");
 
-        // Customers view their balance
-        c1.viewBalance();
-        c2.viewBalance();
+        Department hrDept = company.getDepartment("HR");
+        hrDept.addEmployee("Ravi");
 
-        // Bank displays all customers
-        banka.showAllCustomers();  // fixed variable name
+        // Show all details
+        company.showCompanyDetails();
+
+        System.out.println("\nDeleting company...\n");
+
+        // Delete the company
+        company.deleteCompany();
     }
 }
