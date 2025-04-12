@@ -2,7 +2,7 @@ package com.gevernova.problemstatements;
 
 import java.util.Scanner;
 
-public class GCDLCMCalculator {
+public class GcdLcmCalculator {
     public static void main(String[] args) {
         int[] nums = getInput();
         int gcd = findGCD(nums[0], nums[1]);

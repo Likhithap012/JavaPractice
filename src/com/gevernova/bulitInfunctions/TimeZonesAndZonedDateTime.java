@@ -3,7 +3,7 @@ package com.gevernova.bulitInfunctions;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
-public class TimeZonesandZonedDateTime {
+public class TimeZonesAndZonedDateTime {
     public static void main(String[] args) {
         ZonedDateTime gmt = ZonedDateTime.now(ZoneId.of("GMT"));
         System.out.println("Time in GMT: " + gmt);
