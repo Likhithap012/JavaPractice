@@ -1,6 +1,6 @@
 package com.gevernova.strings.levelone;
 
-public class illegalArgumentExceptionDemo {
+public class IllegalArgumentExceptionDemo {
     public static void main(String[] args) {
         try {
             setAge(-5);

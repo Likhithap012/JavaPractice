@@ -1,6 +1,6 @@
 package com.gevernova.strings.levelone;
 
-public class stringindexoutofboundsexception {
+public class StringIndexOutOfBoundException {
     public static void main(String[] args) {
         try {
             String str = "Hello";
