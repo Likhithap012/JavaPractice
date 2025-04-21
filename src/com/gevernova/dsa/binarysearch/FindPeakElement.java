@@ -1,4 +1,4 @@
-package com.gevernova.binarysearch;
+package com.gevernova.dsa.binarysearch;
 
 import java.util.Scanner;
 

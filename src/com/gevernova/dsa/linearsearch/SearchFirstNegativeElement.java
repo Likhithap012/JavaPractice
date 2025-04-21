@@ -1,4 +1,4 @@
-package com.gevernova.linearsearch;
+package com.gevernova.dsa.linearsearch;
 
 import java.util.Scanner;
 
