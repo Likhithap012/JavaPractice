@@ -4,22 +4,22 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Stack {
-    Queue<Integer>q=new LinkedList<>();
+    Queue<Integer> queue =new LinkedList<>();
     void push(int data){
-        int size=q.size();
-        q.add(data);
+        int size= queue.size();
+        queue.add(data);
         for(int i=0;i<size-1;i++){
-            q.add(q.remove());
+            queue.add(queue.remove());
         }
     }
     int pop(){
-        return q.remove();
+        return queue.remove();
     }
     int top(){
-        return q.peek();
+        return queue.peek();
     }
     int size(){
-        return q.size();
+        return queue.size();
     }
 
 }
