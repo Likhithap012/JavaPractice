@@ -4,32 +4,32 @@ package com.gevernova.objectrelationshipsandcommunication.universitymanagement;
 class UniversityManagementDemo {
     public static void main(String[] args) {
         // Create students
-        UniStudent s1 = new UniStudent("Likhitha");
-        UniStudent s2 = new UniStudent("Ananya");
+        UniStudent studentOne = new UniStudent("Likhitha");
+        UniStudent studentTwo = new UniStudent("Ananya");
 
         // Create professor
-        UniProfessor p1 = new UniProfessor("Dr. Rao");
+        UniProfessor professorOne = new UniProfessor("Dr. Rao");
 
         // Create courses
-        UniCourse c1 = new UniCourse("Data Structures");
-        UniCourse c2 = new UniCourse("Operating Systems");
+        UniCourse courseOne = new UniCourse("Data Structures");
+        UniCourse courseTwo = new UniCourse("Operating Systems");
 
         // Assign professor to courses
-        p1.assignProfessor(c1);
-        p1.assignProfessor(c2);
+        professorOne.assignProfessor(courseOne);
+        professorOne.assignProfessor(courseTwo);
 
         // Students enroll in courses
-        s1.enrollCourse(c1);
-        s2.enrollCourse(c1);
-        s1.enrollCourse(c2);
+        studentOne.enrollCourse(courseOne);
+        studentTwo.enrollCourse(courseOne);
+        studentOne.enrollCourse(courseTwo);
 
         // View details
         System.out.println();
-        c1.showCourseInfo();
+        courseOne.showCourseInfo();
         System.out.println();
-        c2.showCourseInfo();
+        courseTwo.showCourseInfo();
         System.out.println();
-        s1.viewCourses();
-        p1.viewTeachingCourses();
+        studentOne.viewCourses();
+        professorOne.viewTeachingCourses();
     }
 }

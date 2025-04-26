@@ -4,26 +4,26 @@ import java.util.Scanner;
 
 public class SelectionSort {
     public static void selectionSort(int[]arr,int size) {
-        int min=0;
+        int minimum =0;
         for(int i=0;i<size-1;i++){
-            min=i;
+            minimum =i;
             for(int j=i+1;j<size-1;j++){
-                if(arr[j]<arr[min]){
-                    min=j;
+                if(arr[j]<arr[minimum]){
+                    minimum =j;
                 }
             }
             int temp=arr[i];
-            arr[i]=arr[min];
-            arr[min]=temp;
+            arr[i]=arr[minimum];
+            arr[minimum]=temp;
         }
 
     }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int size=sc.nextInt();
+        Scanner scanner =new Scanner(System.in);
+        int size= scanner.nextInt();
         int [] arr =new int[size];
         for(int i=0;i<size;i++){
-            arr[i]=sc.nextInt();
+            arr[i]= scanner.nextInt();
         }
         selectionSort(arr,size);
         for(int i=0;i<size;i++) {

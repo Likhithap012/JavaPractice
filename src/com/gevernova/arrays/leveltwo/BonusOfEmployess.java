@@ -3,7 +3,7 @@ package com.gevernova.arrays.leveltwo;
 import java.util.Scanner;
 public class BonusOfEmployess {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         final int EMPLOYEES = 10;
         double[] salary = new double[EMPLOYEES];
         int[] yearsOfService = new int[EMPLOYEES];
@@ -15,13 +15,13 @@ public class BonusOfEmployess {
         for (int i = 0; i < EMPLOYEES; i++) {
             while (true) {
                 System.out.print("Salary: ");
-                salary[i] = sc.nextDouble();
+                salary[i] = scanner.nextDouble();
                 if (salary[i] > 0) break;
                 System.out.println("Invalid input! Salary must be greater than 0. Try again.");
             }
             while (true) {
                 System.out.print("Years of Service: ");
-                yearsOfService[i] = sc.nextInt();
+                yearsOfService[i] = scanner.nextInt();
                 if (yearsOfService[i] >= 0) break;
                 System.out.println("Invalid input! Years of service cannot be negative. Try again.");
             }

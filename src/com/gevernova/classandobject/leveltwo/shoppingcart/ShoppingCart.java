@@ -5,27 +5,27 @@ import java.util.Scanner;
 
 public class ShoppingCart {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         ArrayList<CartItem> cart = new ArrayList<>();
 
         // Adding first item
         System.out.print("Enter item name: ");
-        String name1 = sc.nextLine();
+        String nameOne = scanner.nextLine();
         System.out.print("Enter price: ");
-        double price1 = sc.nextDouble();
+        double priceOne = scanner.nextDouble();
         System.out.print("Enter quantity: ");
-        int quantity1 = sc.nextInt();
-        cart.add(new CartItem(name1, price1, quantity1));
-        sc.nextLine(); // consume newline
+        int quantityOne = scanner.nextInt();
+        cart.add(new CartItem(nameOne, priceOne, quantityOne));
+        scanner.nextLine(); // consume newline
 
         // Adding second item
         System.out.print("Enter another item name: ");
-        String name2 = sc.nextLine();
+        String nameTwo = scanner.nextLine();
         System.out.print("Enter price: ");
-        double price2 = sc.nextDouble();
+        double priceTwo = scanner.nextDouble();
         System.out.print("Enter quantity: ");
-        int quantity2 = sc.nextInt();
-        cart.add(new CartItem(name2, price2, quantity2));
+        int quantityTwo = scanner.nextInt();
+        cart.add(new CartItem(nameTwo, priceTwo, quantityTwo));
 
         // Display cart details
         double total = 0;

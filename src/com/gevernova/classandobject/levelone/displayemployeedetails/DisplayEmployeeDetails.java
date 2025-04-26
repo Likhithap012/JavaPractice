@@ -6,20 +6,20 @@ public class DisplayEmployeeDetails {
     public static void main(String[] args) {
 
         // Creating Scanner object for user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Creating an Employee object
         Employee employee = new Employee();
 
         // Taking input from user
         System.out.print("Enter Employee Name: ");
-        employee.name = sc.nextLine();
+        employee.name = scanner.nextLine();
 
         System.out.print("Enter Employee ID: ");
-        employee.id = sc.nextInt();
+        employee.id = scanner.nextInt();
 
         System.out.print("Enter Employee Salary: ");
-        employee.salary = sc.nextInt();
+        employee.salary = scanner.nextInt();
 
         // Displaying the entered employee details
         System.out.println("\n--- Employee Details ---");

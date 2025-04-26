@@ -7,9 +7,9 @@ public class SortingComparison {
 
     // Bubble Sort (O(N^2))
     public static void bubbleSort(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
+        int length = arr.length;
+        for (int i = 0; i < length - 1; i++) {
+            for (int j = 0; j < length - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     // Swap the elements
                     int temp = arr[j];

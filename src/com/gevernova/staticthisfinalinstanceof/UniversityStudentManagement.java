@@ -50,20 +50,20 @@ public class UniversityStudentManagement {
 
     public static void main(String[] args) {
         // Creating Student objects
-        Object obj1 = new Student(101, "Ananya Sharma", 'A');
-        Object obj2 = "This is not a student";
+        Object objectOne = new Student(101, "Ananya Sharma", 'A');
+        Object objectTwo = "This is not a student";
 
         // Using instanceof to check before casting and displaying details
-        if (obj1 instanceof Student) {
-            ((Student) obj1).displayStudentDetails();
+        if (objectOne instanceof Student) {
+            ((Student) objectOne).displayStudentDetails();
         } else {
             System.out.println("obj1 is not a student.");
         }
 
         System.out.println();
 
-        if (obj2 instanceof Student) {
-            ((Student) obj2).displayStudentDetails();
+        if (objectTwo instanceof Student) {
+            ((Student) objectTwo).displayStudentDetails();
         } else {
             System.out.println("obj2 is not a student.");
         }

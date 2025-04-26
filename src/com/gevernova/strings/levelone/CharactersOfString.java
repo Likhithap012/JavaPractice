@@ -3,8 +3,8 @@ package com.gevernova.strings.levelone;
 import java.util.Scanner;
 public class CharactersOfString {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        String str=sc.next();
+        Scanner scanner = new Scanner(System.in);
+        String str= scanner.next();
         int length=str.length();
         for(int i=0;i<length;i++){
             System.out.println(str.charAt(i));

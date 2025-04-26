@@ -9,18 +9,18 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // Creating sample products with name, price, and quantity
-        Product p1 = new Product("Milk", 30.0, 2);
-        Product p2 = new Product("Bread", 25.0, 1);
-        Product p3 = new Product("Eggs", 6.0, 12);
+        Product productOne = new Product("Milk", 30.0, 2);
+        Product productTwo = new Product("Bread", 25.0, 1);
+        Product productThree = new Product("Eggs", 6.0, 12);
 
         // Adding products to a list
-        List<Product> productList = Arrays.asList(p1, p2, p3);
+        List<Product> productList = Arrays.asList(productOne, productTwo, productThree);
 
         // Creating a customer with purchased products
         Customer customer = new Customer("Anjali", 1001, productList);
 
         // Generating and printing the bill
-        BillGenerator billGen = new BillGenerator();
-        billGen.generateBill(customer);
+        BillGenerator billGenerator = new BillGenerator();
+        billGenerator.generateBill(customer);
     }
 }

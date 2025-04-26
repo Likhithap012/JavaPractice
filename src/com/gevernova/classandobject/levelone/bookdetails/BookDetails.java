@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class BookDetails {
     public static void main(String[] args) {
         Book book=new Book();//Create object for book
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner =new Scanner(System.in);
         //Getting the details form user
         System.out.println("Enter title:");
-        book.title=sc.nextLine();
+        book.title= scanner.nextLine();
         System.out.println("Enter author:");
-        book.author=sc.nextLine();
+        book.author= scanner.nextLine();
         System.out.println("Enter price:");
-        book.price= sc.nextInt();
+        book.price= scanner.nextInt();
         //displaying the details
         book.display();
 

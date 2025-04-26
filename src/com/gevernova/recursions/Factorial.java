@@ -2,11 +2,11 @@ package com.gevernova.recursions;
 
 public class Factorial {
     // Recursive method to calculate factorial
-    public static long factorial(int n) {
-        if (n == 0 || n == 1) {
+    public static long factorial(int number) {
+        if (number == 0 || number == 1) {
             return 1; // Base case
         }
-        return n * factorial(n - 1); // Recursive case
+        return number * factorial(number - 1); // Recursive case
     }
 
     // Main method to test the factorial method

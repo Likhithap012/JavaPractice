@@ -4,17 +4,17 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class DynamicLargestAndSecondLargest {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int number = sc.nextInt();
-        int maxDigit = 10;
-        int[] digits = new int[maxDigit];
+        int number = scanner.nextInt();
+        int maximumDigit = 10;
+        int[] digits = new int[maximumDigit];
         int index = 0;
         int temp = number;
         while (temp > 0) {
-            if (index == maxDigit) {
-                maxDigit += 10;
-                digits = Arrays.copyOf(digits, maxDigit);
+            if (index == maximumDigit) {
+                maximumDigit += 10;
+                digits = Arrays.copyOf(digits, maximumDigit);
             }
             digits[index++] = temp % 10;
             temp /= 10;

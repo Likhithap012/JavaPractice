@@ -6,8 +6,8 @@ class Circle {
     double ans;         // variable to store the computed area
 
     // Method to calculate the area of the circle using the given radius
-    void calculate(int r) {
-        ans = Math.PI * r * r; // Area = π * r^2
+    void calculate(int radius) {
+        ans = Math.PI * radius * radius; // Area = π * r^2
     }
 
     // Method to display the calculated area

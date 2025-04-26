@@ -10,18 +10,18 @@ public class Main {
 
         scheduler.displayAllTasks();
 
-        System.out.println("\n🔄 Cycling through tasks:");
+        System.out.println("\nCycling through tasks:");
         scheduler.viewCurrentAndMoveNext(); // Task 102
         scheduler.viewCurrentAndMoveNext(); // Task 103
         scheduler.viewCurrentAndMoveNext(); // Task 101
 
-        System.out.println("\n🔍 Search by Priority:");
+        System.out.println("\n Search by Priority:");
         scheduler.searchByPriority(2);
 
-        System.out.println("\n❌ Removing Task ID 103");
+        System.out.println("\n Removing Task ID 103");
         scheduler.removeById(103);
 
-        System.out.println("\n📋 Updated Tasks:");
+        System.out.println("\nUpdated Tasks:");
         scheduler.displayAllTasks();
     }
 }

@@ -4,31 +4,31 @@ import java.util.Scanner;
 
 public class GcdLcmCalculator {
     public static void main(String[] args) {
-        int[] nums = getInput();
-        int gcd = findGCD(nums[0], nums[1]);
-        int lcm = findLCM(nums[0], nums[1], gcd);
-        displayResults(nums[0], nums[1], gcd, lcm);
+        int[] numberss = getInput();
+        int gcd = findGCD(numberss[0], numberss[1]);
+        int lcm = findLCM(numberss[0], numberss[1], gcd);
+        displayResults(numberss[0], numberss[1], gcd, lcm);
     }
 
     public static int[] getInput() {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first number: ");
-        int a = sc.nextInt();
+        int numberOne = scanner.nextInt();
         System.out.print("Enter second number: ");
-        int b = sc.nextInt();
-        return new int[]{a, b};
+        int numberTwo = scanner.nextInt();
+        return new int[]{numberOne, numberTwo};
     }
 
-    public static int findGCD(int a, int b) {
-        if (b == 0) return a;
-        return findGCD(b, a % b);
+    public static int findGCD(int numberOne, int numberTwo) {
+        if (numberTwo == 0) return numberOne;
+        return findGCD(numberTwo, numberOne % numberTwo);
     }
 
-    public static int findLCM(int a, int b, int gcd) {
-        return (a * b) / gcd;
+    public static int findLCM(int numberOne, int numberTwo, int gcd) {
+        return (numberOne * numberTwo) / gcd;
     }
 
-    public static void displayResults(int a, int b, int gcd, int lcm) {
+    public static void displayResults(int numberOne, int numberTwo, int gcd, int lcm) {
         System.out.println("GCD: " + gcd);
         System.out.println("LCM: " + lcm);
     }

@@ -7,25 +7,25 @@ public class SchoolSystem {
         SchoolInstitution school = new SchoolInstitution("Green Valley High School");
 
         // Create students
-        SchoolStudent s1 = new SchoolStudent("Likhitha");
-        SchoolStudent s2 = new SchoolStudent("Ananya");
+        SchoolStudent studentOne = new SchoolStudent("Likhitha");
+        SchoolStudent studentTwo = new SchoolStudent("Ananya");
 
         // Add students to school
-        school.addStudent(s1);
-        school.addStudent(s2);
+        school.addStudent(studentOne);
+        school.addStudent(studentTwo);
 
         // Create courses
         LearningCourse math = new LearningCourse("Mathematics");
         LearningCourse science = new LearningCourse("Science");
 
         // Enroll students
-        s1.enrollInCourse(math);
-        s1.enrollInCourse(science);
-        s2.enrollInCourse(math);
+        studentOne.enrollInCourse(math);
+        studentOne.enrollInCourse(science);
+        studentTwo.enrollInCourse(math);
 
         // Display student and course info
-        s1.showCourses();
-        s2.showCourses();
+        studentOne.showCourses();
+        studentTwo.showCourses();
 
         math.showEnrolledStudents();
         science.showEnrolledStudents();

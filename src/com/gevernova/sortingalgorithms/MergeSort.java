@@ -35,11 +35,11 @@ public class MergeSort {
         }
     }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int size=sc.nextInt();
+        Scanner scanner =new Scanner(System.in);
+        int size= scanner.nextInt();
         int [] empId =new int[size];
         for(int i=0;i<size;i++){
-            empId[i]=sc.nextInt();
+            empId[i]= scanner.nextInt();
         }
         mergeSort(empId,0,size-1);
         for(int i=0;i<size;i++){

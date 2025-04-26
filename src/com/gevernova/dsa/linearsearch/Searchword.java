@@ -4,23 +4,23 @@ import java.util.Scanner;
 
 public class Searchword {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Input the number of sentences
         System.out.print("Enter the number of sentences: ");
-        int size = sc.nextInt();
-        sc.nextLine(); // Consume newline
+        int size = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
 
         // Input the array of sentences
         String[] sentences = new String[size];
         for (int i = 0; i < size; i++) {
             System.out.print("Enter sentence " + (i + 1) + ": ");
-            sentences[i] = sc.nextLine();
+            sentences[i] = scanner.nextLine();
         }
 
         // Input the word to search
         System.out.print("Enter the word to search: ");
-        String word = sc.nextLine();
+        String word = scanner.nextLine();
 
         // Linear search for a sentence containing the word
         String result = "Not Found";

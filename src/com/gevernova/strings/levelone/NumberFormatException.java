@@ -1,7 +1,7 @@
 package com.gevernova.strings.levelone;
 
 import java.util.Scanner;
-public class numberFormatException {
+ class NumberException {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number as a string: ");

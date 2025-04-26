@@ -4,22 +4,22 @@ import java.util.Scanner;
 
 public class FirstLastOccurrence {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Input array size
         System.out.print("Enter array size: ");
-        int size = sc.nextInt();
+        int size = scanner.nextInt();
 
         // Declare and initialize array
-        int[] arr = new int[size];
+        int[] array = new int[size];
         System.out.println("Enter sorted array elements:");
         for (int i = 0; i < size; i++) {
-            arr[i] = sc.nextInt();
+            array[i] = scanner.nextInt();
         }
 
         // Input target element
         System.out.print("Enter target element: ");
-        int target = sc.nextInt();
+        int target = scanner.nextInt();
 
         // Binary search to find first occurrence
         int first = -1;
@@ -27,10 +27,10 @@ public class FirstLastOccurrence {
         while (low <= high) {
             int mid = (low + high) / 2;
 
-            if (arr[mid] == target) {
+            if (array[mid] == target) {
                 first = mid;
                 high = mid - 1; // keep searching on left side
-            } else if (target < arr[mid]) {
+            } else if (target < array[mid]) {
                 high = mid - 1;
             } else {
                 low = mid + 1;
@@ -44,10 +44,10 @@ public class FirstLastOccurrence {
         while (low <= high) {
             int mid = (low + high) / 2;
 
-            if (arr[mid] == target) {
+            if (array[mid] == target) {
                 last = mid;
                 low = mid + 1; // keep searching on right side
-            } else if (target < arr[mid]) {
+            } else if (target < array[mid]) {
                 high = mid - 1;
             } else {
                 low = mid + 1;

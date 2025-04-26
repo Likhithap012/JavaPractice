@@ -6,11 +6,11 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // Creating Subject objects
-        Subject subject1 = new Subject("Maths", 90);
-        Subject subject2 = new Subject("Science", 85);
+        Subject subjectOne = new Subject("Maths", 90);
+        Subject subjectTwo = new Subject("Science", 85);
 
         // Adding subjects to a list
-        List<Subject> subjects = Arrays.asList(subject1, subject2);
+        List<Subject> subjects = Arrays.asList(subjectOne, subjectTwo);
 
         // Creating a Student object
         Student student = new Student("John", 101, subjects);

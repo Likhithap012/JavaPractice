@@ -6,21 +6,21 @@ public class LargestOfTheThree {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter first number: ");
-        double num1 = scanner.nextDouble();
+        double numberOne = scanner.nextDouble();
         System.out.print("Enter second number: ");
-        double num2 = scanner.nextDouble();
+        double numberTwo = scanner.nextDouble();
         System.out.print("Enter third number: ");
-        double num3 = scanner.nextDouble();
+        double numberThree = scanner.nextDouble();
 
-        if (num1 > num2 && num1 > num3) {
+        if (numberOne > numberTwo && numberOne > numberThree) {
             System.out.println("Is the first number the largest? true");
             System.out.println("Is the second number the largest? false");
             System.out.println("Is the third number the largest? false");
-        } else if (num2 > num1 && num2 > num3) {
+        } else if (numberTwo > numberOne && numberTwo > numberThree) {
             System.out.println("Is the first number the largest? false");
             System.out.println("Is the second number the largest? true");
             System.out.println("Is the third number the largest? false");
-        } else if (num3 > num1 && num3 > num2) {
+        } else if (numberThree > numberOne && numberThree > numberTwo) {
             System.out.println("Is the first number the largest? false");
             System.out.println("Is the second number the largest? false");
             System.out.println("Is the third number the largest? true");

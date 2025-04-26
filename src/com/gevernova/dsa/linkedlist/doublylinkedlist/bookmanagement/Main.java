@@ -9,19 +9,19 @@ public class Main {
         library.addAtPosition(2, "To Kill a Mockingbird", "Harper Lee", "Fiction", 103, true);
 
         library.displayForward();
-        System.out.println("\n🔍 Searching by Author:");
+        System.out.println("\n Searching by Author:");
         library.searchByTitleOrAuthor("Harper Lee");
 
-        System.out.println("\n📝 Updating availability of Book ID 102:");
+        System.out.println("\n Updating availability of Book ID 102:");
         library.updateAvailability(102, true);
 
-        System.out.println("\n📕 Display Reverse Order:");
+        System.out.println("\n Display Reverse Order:");
         library.displayReverse();
 
-        System.out.println("\n❌ Removing Book ID 103:");
+        System.out.println("\n Removing Book ID 103:");
         library.removeByBookId(103);
 
-        System.out.println("\n📚 Total Books: " + library.countBooks());
+        System.out.println("\n Total Books: " + library.countBooks());
     }
 }
 

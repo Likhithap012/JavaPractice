@@ -69,9 +69,9 @@ public class DigitAnalyzer {
 
         // Main method to test all functionality
         public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.print("Enter a number: ");
-            int number = sc.nextInt();
+            int number = scanner.nextInt();
 
             int[] digits = getDigitsArray(number);
 

@@ -3,10 +3,10 @@ package com.gevernova.dsa.queueandstack;
 import java.util.*;
 public class SlindingWindow {
     static void GetMax(int arr[], int l, int r, ArrayList < Integer > maxx) {
-        int i, maxi = Integer.MIN_VALUE;
+        int i, maximum = Integer.MIN_VALUE;
         for (i = l; i <= r; i++)
-            maxi = Math.max(maxi, arr[i]);
-        maxx.add(maxi);
+            maximum = Math.max(maximum, arr[i]);
+        maxx.add(maximum);
     }
     static ArrayList < Integer > maxSlidingWindow(int arr[], int k) {
         int left = 0, right = 0;

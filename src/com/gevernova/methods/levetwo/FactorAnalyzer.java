@@ -31,8 +31,8 @@ public class FactorAnalyzer {
     // Method to find sum of factors
     public static int sumOfFactors(int[] factors) {
         int sum = 0;
-        for (int f : factors) {
-            sum += f;
+        for (int factor : factors) {
+            sum += factor;
         }
         return sum;
     }
@@ -57,9 +57,9 @@ public class FactorAnalyzer {
 
     // Main method to test
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
 
         int[] factors = findFactors(number);
 

@@ -3,12 +3,12 @@ package com.gevernova.constructors.accessmodifiers.universitymanagementsystem;
 public class UniversityManagementSystem {
     public static void main(String[] args) {
         // Create Student object
-        Student student1 = new Student(101, "Likhitha", 9.2);
-        student1.displayDetails();
+        Student studentOne = new Student(101, "Likhitha", 9.2);
+        studentOne.displayDetails();
 
         // Update CGPA using setter
-        student1.setCGPA(9.5);
-        System.out.println("Updated CGPA: " + student1.getCGPA());
+        studentOne.setCGPA(9.5);
+        System.out.println("Updated CGPA: " + studentOne.getCGPA());
 
         System.out.println();
 

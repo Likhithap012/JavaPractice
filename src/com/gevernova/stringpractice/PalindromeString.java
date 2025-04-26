@@ -3,12 +3,12 @@ package com.gevernova.stringpractice;
 import java.util.Scanner;
 public class PalindromeString {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-        int n=str.length();
+        Scanner scanner =new Scanner(System.in);
+        String str= scanner.nextLine();
+        int length =str.length();
         String ans="";
-        for(int i=0;i<n/2;i++){
-            if(str.charAt(i)==str.charAt(n-1-i)){
+        for(int i = 0; i< length /2; i++){
+            if(str.charAt(i)==str.charAt(length -1-i)){
                 ans="yes";
             }else{
                 ans="no";

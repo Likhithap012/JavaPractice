@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class SumOfnNaturalNumberUsingFor {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int r=-1;
+        Scanner scanner =new Scanner(System.in);
+        int number = scanner.nextInt();
+        int result =-1;
         int sumLoop=0;
-        if(n<=0){
+        if(number <=0){
             System.out.println("negative number");
         }
         else{
-            r=(n*(n+1))/2;
-            for (int i = 1; i <= n; i++) {
+            result =(number *(number +1))/2;
+            for (int i = 1; i <= number; i++) {
                 sumLoop += i;
             }
         }
-        if(r==sumLoop){
+        if(result ==sumLoop){
             System.out.println("both are same");
         }else{
             System.out.println("both are not same");

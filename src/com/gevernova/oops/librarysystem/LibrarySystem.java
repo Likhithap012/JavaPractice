@@ -2,25 +2,25 @@ package com.gevernova.oops.librarysystem;
 
 public class LibrarySystem {
     public static void main(String[] args) {
-        LibraryItem item1 = new Book(101, "The Alchemist", "Paulo Coelho");
-        LibraryItem item2 = new Magazine(102, "National Geographic", "John Doe");
-        LibraryItem item3 = new DVD(103, "Inception", "Christopher Nolan");
+        LibraryItem itemOne = new Book(101, "The Alchemist", "Paulo Coelho");
+        LibraryItem itemTwo = new Magazine(102, "National Geographic", "John Doe");
+        LibraryItem itemThree = new DVD(103, "Inception", "Christopher Nolan");
 
-        item1.getItemDetails();
-        System.out.println("Loan Duration: " + item1.getLoanDuration() + " days");
+        itemOne.getItemDetails();
+        System.out.println("Loan Duration: " + itemOne.getLoanDuration() + " days");
 
-        item2.getItemDetails();
-        System.out.println("Loan Duration: " + item2.getLoanDuration() + " days");
+        itemTwo.getItemDetails();
+        System.out.println("Loan Duration: " + itemTwo.getLoanDuration() + " days");
 
-        item3.getItemDetails();
-        System.out.println("Loan Duration: " + item3.getLoanDuration() + " days");
+        itemThree.getItemDetails();
+        System.out.println("Loan Duration: " + itemThree.getLoanDuration() + " days");
 
         // Polymorphism through interface
-        Reservable res1 = (Reservable) item1;
+        Reservable res1 = (Reservable) itemOne;
         res1.reserveItem("Alice");
         System.out.println("Availability: " + res1.checkAvailability());
 
-        Reservable res2 = (Reservable) item2;
+        Reservable res2 = (Reservable) itemTwo;
         res2.reserveItem("Bob");
         System.out.println("Availability: " + res2.checkAvailability());
     }

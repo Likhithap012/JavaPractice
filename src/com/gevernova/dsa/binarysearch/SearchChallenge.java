@@ -4,36 +4,36 @@ import java.util.*;
 
 public class SearchChallenge {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Input size
         System.out.print("Enter the size of the array: ");
-        int n = sc.nextInt();
+        int size = scanner.nextInt();
 
-        int[] arr = new int[n];
-        boolean[] present = new boolean[n + 1]; // To track presence of numbers from 1 to n
+        int[] arr = new int[size];
+        boolean[] present = new boolean[size + 1]; // To track presence of numbers from 1 to n
 
         // Input array elements
         System.out.println("Enter the elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        for (int i = 0; i < size; i++) {
+            arr[i] = scanner.nextInt();
 
             // Mark present if number is in range 1 to n
-            if (arr[i] > 0 && arr[i] <= n) {
+            if (arr[i] > 0 && arr[i] <= size) {
                 present[arr[i]] = true;
             }
         }
 
         // LINEAR SEARCH: Find first missing positive
         int missing = -1;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= size; i++) {
             if (!present[i]) {
                 missing = i;
                 break;
             }
         }
         if (missing == -1) {
-            missing = n + 1;
+            missing = size + 1;
         }
 
         System.out.println("First missing positive integer: " + missing);
@@ -43,10 +43,10 @@ public class SearchChallenge {
 
         // Input target number to search
         System.out.print("Enter the target number to search: ");
-        int target = sc.nextInt();
+        int target = scanner.nextInt();
 
         // BINARY SEARCH: Search for the target element
-        int low = 0, high = n - 1;
+        int low = 0, high = size - 1;
         int index = -1;
         while (low <= high) {
             int mid = (low + high) / 2;

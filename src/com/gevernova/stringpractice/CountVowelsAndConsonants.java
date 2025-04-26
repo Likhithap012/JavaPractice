@@ -3,8 +3,8 @@ package com.gevernova.stringpractice;
 import java.util.Scanner;
 public class CountVowelsAndConsonants {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
+        Scanner scanner =new Scanner(System.in);
+        String str= scanner.nextLine();
         str=str.toLowerCase();
         int vowels=0;
         int constant=0;

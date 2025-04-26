@@ -15,11 +15,11 @@ public class InsertionSort {
         }
     }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int size=sc.nextInt();
+        Scanner scanner =new Scanner(System.in);
+        int size= scanner.nextInt();
         int [] empId =new int[size];
         for(int i=0;i<size;i++){
-            empId[i]=sc.nextInt();
+            empId[i]= scanner.nextInt();
         }
         insertionSort(empId,size);
         for(int i=0;i<size;i++){

@@ -3,34 +3,34 @@ package com.gevernova.stringpractice;
 import java.util.Scanner;
 public class CompareTwoStrings {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String str1 = sc.nextLine();
-        String str2 = sc.nextLine();
-        int len1 = str1.length();
-        int len2 = str2.length();
-        int minLen = Math.min(len1, len2);
+        Scanner scanner =new Scanner(System.in);
+        String strOne = scanner.nextLine();
+        String strTwo = scanner.nextLine();
+        int lenOne = strOne.length();
+        int lenTwo = strTwo.length();
+        int minLen = Math.min(lenOne, lenTwo);
         boolean areEqual = true;
         for (int i = 0; i < minLen; i++) {
-            char ch1 = str1.charAt(i);
-            char ch2 = str2.charAt(i);
+            char ch1 = strOne.charAt(i);
+            char ch2 = strTwo.charAt(i);
 
             if (ch1 < ch2) {
-                System.out.println(str1 + " comes before " + str2);
+                System.out.println(strOne + " comes before " + strTwo);
                 areEqual = false;
                 break;
             } else if (ch1 > ch2) {
-                System.out.println(str2 + " comes before " + str1);
+                System.out.println(strTwo + " comes before " + strOne);
                 areEqual = false;
                 break;
             }
         }
         if (areEqual) {
-            if (len1 == len2) {
+            if (lenOne == lenTwo) {
                 System.out.println("Both strings are equal.");
-            } else if (len1 < len2) {
-                System.out.println(str1 + " comes before " + str2);
+            } else if (lenOne < lenTwo) {
+                System.out.println(strOne + " comes before " + strTwo);
             } else {
-                System.out.println(str2 + " comes before " + str1);
+                System.out.println(strTwo + " comes before " + strOne);
             }
         }
 

@@ -19,8 +19,8 @@ class SchoolStudent {
 
     void showCourses() {
         System.out.println(name + " is enrolled in:");
-        for (LearningCourse c : courses) {
-            System.out.println("- " + c.courseName);
+        for (LearningCourse course : courses) {
+            System.out.println("- " + course.courseName);
         }
     }
 }

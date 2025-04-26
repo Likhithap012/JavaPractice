@@ -4,46 +4,46 @@ import java.util.Scanner;
 
 public class FindPeakElement {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Read size of the array
         System.out.print("Enter size of array: ");
-        int n = sc.nextInt();
+        int size = scanner.nextInt();
 
         // Create and read array elements
-        int[] arr = new int[n];
+        int[] array = new int[size];
         System.out.println("Enter array elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
         }
 
         // Edge cases:
-        if (n == 1) {
+        if (size == 1) {
             System.out.println("Peak found at index: 0");
             return;
         }
-        if (arr[0] > arr[1]) {
+        if (array[0] > array[1]) {
             System.out.println("Peak found at index: 0");
             return;
         }
-        if (arr[n - 1] > arr[n - 2]) {
-            System.out.println("Peak found at index: " + (n - 1));
+        if (array[size - 1] > array[size - 2]) {
+            System.out.println("Peak found at index: " + (size - 1));
             return;
         }
 
         // Binary search for peak in the middle of the array
-        int low = 1, high = n - 2;
+        int low = 1, high = size - 2;
         while (low <= high) {
             int mid = (low + high) / 2;
 
             // Check if arr[mid] is a peak
-            if (arr[mid] > arr[mid - 1] && arr[mid] > arr[mid + 1]) {
+            if (array[mid] > array[mid - 1] && array[mid] > array[mid + 1]) {
                 System.out.println("Peak found at index: " + mid);
                 return;
             }
 
             // If the left neighbor is smaller, move to the right half
-            if (arr[mid] > arr[mid - 1]) {
+            if (array[mid] > array[mid - 1]) {
                 low = mid + 1;
             } else {
                 // Otherwise, move to the left half

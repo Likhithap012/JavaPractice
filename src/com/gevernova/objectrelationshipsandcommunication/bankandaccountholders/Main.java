@@ -6,16 +6,16 @@ class Main {
         Bank bank = new Bank("SBI");
 
         // Create customers
-        Customer c1 = new Customer("Likhitha", 5000);
-        Customer c2 = new Customer("Ananya", 10000);
+        Customer customerOne = new Customer("Likhitha", 5000);
+        Customer customerTwo = new Customer("Ananya", 10000);
 
         // Open accounts
-        bank.openAccount(c1);
-        bank.openAccount(c2);
+        bank.openAccount(customerOne);
+        bank.openAccount(customerTwo);
 
         // Customers view their balance
-        c1.viewBalance();
-        c2.viewBalance();
+        customerOne.viewBalance();
+        customerTwo.viewBalance();
 
         // Bank displays all customers
         bank.showAllCustomers();

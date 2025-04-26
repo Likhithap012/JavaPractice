@@ -41,10 +41,10 @@ public class ZeroSumSubarrays {
 
     // Main function to test the zero sum subarrays
     public static void main(String[] args) {
-        int[] arr = { 6, -1, 3, -2, 2, 4, -4, 1, -1 };
+        int[] array = { 6, -1, 3, -2, 2, 4, -4, 1, -1 };
 
         System.out.println("All subarrays with zero sum:");
-        findZeroSumSubarrays(arr);
+        findZeroSumSubarrays(array);
     }
 }
 

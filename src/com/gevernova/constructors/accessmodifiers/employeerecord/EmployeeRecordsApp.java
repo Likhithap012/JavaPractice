@@ -4,12 +4,12 @@ package com.gevernova.constructors.accessmodifiers.employeerecord;
 public class EmployeeRecordsApp {
     public static void main(String[] args) {
         // Creating Employee object
-        Employee emp = new Employee(1001, "IT", 55000.0);
-        emp.displayInfo();
+        Employee employee = new Employee(1001, "IT", 55000.0);
+        employee.displayInfo();
 
         // Modifying salary
-        emp.setSalary(60000.0);
-        System.out.println("Updated Salary: $" + emp.getSalary());
+        employee.setSalary(60000.0);
+        System.out.println("Updated Salary: $" + employee.getSalary());
 
         System.out.println();
 

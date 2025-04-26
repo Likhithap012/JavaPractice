@@ -3,9 +3,9 @@ package com.gevernova.dsa.timeandspacecomplexity;
 public class StringConcatenationComparison {
 
     // Method to concatenate strings using String (O(N²))
-    public static String concatUsingString(int n) {
+    public static String concatUsingString(int number) {
         String result = "";
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < number; i++) {
             result += "a";
         }
         return result;

@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class splitTextIntoWords {
+public class SplitTextIntoWords {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String input=sc.nextLine();
+        Scanner scanner =new Scanner(System.in);
+        String input= scanner.nextLine();
         String[] words=input.split("\\s+");
         List<String[]>result=new ArrayList<>();
         for(String word:words){

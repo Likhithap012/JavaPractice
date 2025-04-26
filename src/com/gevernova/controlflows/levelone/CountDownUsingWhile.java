@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class CountDownUsingWhile {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        while(n>0){
-            System.out.println(n);
-            n--;
+        Scanner scanner =new Scanner(System.in);
+        int number = scanner.nextInt();
+        while(number >0){
+            System.out.println(number);
+            number--;
         }
 
     }

@@ -104,8 +104,8 @@ public class LinkedListInventory {
 
     // Sort by Item Name (ascending or descending)
     public void sortByName(boolean ascending) {
-        head = mergeSort(head, (a, b) ->
-                ascending ? a.itemName.compareToIgnoreCase(b.itemName) : b.itemName.compareToIgnoreCase(a.itemName));
+        head = mergeSort(head, (first, second) ->
+                ascending ? first.itemName.compareToIgnoreCase(second.itemName) : second.itemName.compareToIgnoreCase(first.itemName));
     }
 
     // Sort by Price

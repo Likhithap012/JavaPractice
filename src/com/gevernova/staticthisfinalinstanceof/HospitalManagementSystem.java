@@ -43,21 +43,21 @@ public class HospitalManagementSystem {
 
     public static void main(String[] args) {
         // Create patients
-        Object p1 = new Patient("Rahul Sharma", 32, "Fever", 101);
-        Object p2 = new Patient("Sneha Reddy", 45, "Diabetes", 102);
+        Object patientOne = new Patient("Rahul Sharma", 32, "Fever", 101);
+        Object patientTwo = new Patient("Sneha Reddy", 45, "Diabetes", 102);
         Object notAPatient = "Just a String";
 
         // Check and display details only if it's a Patient
-        if (p1 instanceof Patient) {
-            ((Patient) p1).displayPatientDetails();
+        if (patientOne instanceof Patient) {
+            ((Patient) patientOne).displayPatientDetails();
         } else {
             System.out.println("p1 is not a Patient.");
         }
 
         System.out.println();
 
-        if (p2 instanceof Patient) {
-            ((Patient) p2).displayPatientDetails();
+        if (patientTwo instanceof Patient) {
+            ((Patient) patientTwo).displayPatientDetails();
         } else {
             System.out.println("p2 is not a Patient.");
         }

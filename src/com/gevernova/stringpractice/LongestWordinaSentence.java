@@ -3,8 +3,8 @@ package com.gevernova.stringpractice;
 import java.util.Scanner;
 public class LongestWordinaSentence {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
+        Scanner scanner =new Scanner(System.in);
+        String str= scanner.nextLine();
         String [] words=str.split(" ");
         String longstring="";
         for(int i=0;i<words.length;i++){

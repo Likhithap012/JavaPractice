@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class DateArithmetic {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a date (yyyy-MM-dd): ");
-        String input = sc.nextLine();
+        String input = scanner.nextLine();
         LocalDate date = LocalDate.parse(input);
 
         LocalDate result = date.plusDays(7)

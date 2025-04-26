@@ -5,22 +5,22 @@ import java.util.Scanner;
 
 public class DateComparison {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter first date (yyyy-MM-dd): ");
-        String input1 = sc.nextLine();
+        String inputOne = scanner.nextLine();
 
         System.out.print("Enter second date (yyyy-MM-dd): ");
-        String input2 = sc.nextLine();
+        String inputTwo = scanner.nextLine();
 
-        LocalDate date1 = LocalDate.parse(input1);
-        LocalDate date2 = LocalDate.parse(input2);
+        LocalDate dateOne = LocalDate.parse(inputOne);
+        LocalDate dateTwo = LocalDate.parse(inputTwo);
 
-        if (date1.isBefore(date2)) {
+        if (dateOne.isBefore(dateTwo)) {
             System.out.println("The first date is before the second date.");
-        } else if (date1.isAfter(date2)) {
+        } else if (dateOne.isAfter(dateTwo)) {
             System.out.println("The first date is after the second date.");
-        } else if (date1.isEqual(date2)) {
+        } else if (dateOne.isEqual(dateTwo)) {
             System.out.println("Both dates are the same.");
         }
     }

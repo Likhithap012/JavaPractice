@@ -4,26 +4,26 @@ import java.util.Scanner;
 public class YoungestAndTallest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int ageA = scanner.nextInt();
-        int ageB = scanner.nextInt();
-        int ageC = scanner.nextInt();
-        int heightA = scanner.nextInt();
-        int heightB = scanner.nextInt();
-        int heightC = scanner.nextInt();
+        int ageOne = scanner.nextInt();
+        int ageTwo = scanner.nextInt();
+        int ageThree = scanner.nextInt();
+        int heightOne = scanner.nextInt();
+        int heightTwo = scanner.nextInt();
+        int heightThree = scanner.nextInt();
 
         // Finding the youngest friend
         String youngest;
-        if (ageA < ageB && ageA < ageC) {
+        if (ageOne < ageTwo && ageOne < ageThree) {
             youngest = "Amar";
-        } else if (ageB < ageA && ageB < ageC) {
+        } else if (ageTwo < ageOne && ageTwo < ageThree) {
             youngest = "Akbar";
         } else {
             youngest = "Anthony";
         }
         String tallest;
-        if (heightA > heightB && heightA > heightC) {
+        if (heightOne > heightTwo && heightOne > heightThree) {
             tallest = "Amar";
-        } else if (heightB > heightA && heightB > heightC) {
+        } else if (heightTwo > heightOne && heightTwo > heightThree) {
             tallest = "Akbar";
         } else {
             tallest = "Anthony";

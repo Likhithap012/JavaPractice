@@ -10,9 +10,9 @@ public class PalindromeChecker {
     }
 
     public static String getInput() {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        return sc.nextLine();
+        return scanner.nextLine();
     }
 
     public static boolean isPalindrome(String str) {

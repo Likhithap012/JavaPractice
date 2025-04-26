@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Multiples {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n;
+        int number;
 
         // Taking input and validating if it's a positive integer
         do {
@@ -13,14 +13,14 @@ public class Multiples {
                 System.out.println("Invalid input! Please enter a positive integer.");
                 scanner.next(); // Clear the invalid input
             }
-            n = scanner.nextInt();
-            if (n <= 0) {
+            number = scanner.nextInt();
+            if (number <= 0) {
                 System.out.println("Please enter a positive integer.");
             }
-        } while (n <= 0);
+        } while (number <= 0);
 
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= number; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println("FizzBuzz");
             } else if (i % 3 == 0) {

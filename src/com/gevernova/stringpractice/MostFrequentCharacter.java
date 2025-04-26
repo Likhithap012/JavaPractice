@@ -3,17 +3,17 @@ package com.gevernova.stringpractice;
 import java.util.Scanner;
 public class MostFrequentCharacter {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String str = sc.nextLine();
-        int[] freq = new int[256];
+        Scanner scanner =new Scanner(System.in);
+        String str = scanner.nextLine();
+        int[] freqency = new int[256];
         for (int i = 0; i < str.length(); i++) {
-            freq[str.charAt(i)]++;
+            freqency[str.charAt(i)]++;
         }
         char mostFrequent = ' ';
-        int max = 0;
+        int maximum = 0;
         for (int i = 0; i < str.length(); i++) {
-            if (freq[str.charAt(i)] > max) {
-                max = freq[str.charAt(i)];
+            if (freqency[str.charAt(i)] > maximum) {
+                maximum = freqency[str.charAt(i)];
                 mostFrequent = str.charAt(i);
             }
         }

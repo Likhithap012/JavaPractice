@@ -9,17 +9,17 @@ public class LibraryManagementSystem {
         System.out.println();
 
         // Create Book objects
-        Book book1 = new Book("Wings of Fire", "A.P.J Abdul Kalam", "978-81-7371-146-6");
-        Book book2 = new Book("The Alchemist", "Paulo Coelho", "978-06-0452-272-1");
+        Book bookOne = new Book("Wings of Fire", "A.P.J Abdul Kalam", "978-81-7371-146-6");
+        Book bookTwo = new Book("The Alchemist", "Paulo Coelho", "978-06-0452-272-1");
 
         // Display details
-        if (book1 instanceof Book) {
-            ((Book) book1).displayBookDetails();
+        if (bookOne instanceof Book) {
+            ((Book) bookOne).displayBookDetails();
             System.out.println();
         }
 
-        if (book2 instanceof Book) {
-            ((Book) book2).displayBookDetails();
+        if (bookTwo instanceof Book) {
+            ((Book) bookTwo).displayBookDetails();
         }
     }
 }

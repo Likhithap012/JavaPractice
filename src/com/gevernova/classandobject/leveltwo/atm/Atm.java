@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Atm {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount();
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Take account details as input
         System.out.print("Enter Account Holder Name: ");
-        bankAccount.accountHolder = sc.nextLine();
+        bankAccount.accountHolder = scanner.nextLine();
 
         System.out.print("Enter Account Number: ");
-        bankAccount.accountNumber = sc.nextInt();
+        bankAccount.accountNumber = scanner.nextInt();
 
         System.out.print("Enter Initial Balance: ₹");
-        bankAccount.balance = sc.nextInt();
+        bankAccount.balance = scanner.nextInt();
 
         int choice;
         do {
@@ -26,18 +26,18 @@ public class Atm {
             System.out.println("3. Check Balance");
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
-            choice = sc.nextInt();
+            choice = scanner.nextInt();
 
             switch (choice) {
                 case 1:
                     System.out.print("Enter amount to deposit: ₹");
-                    int depositAmount = sc.nextInt();
+                    int depositAmount = scanner.nextInt();
                     bankAccount.deposit(depositAmount);
                     break;
 
                 case 2:
                     System.out.print("Enter amount to withdraw: ₹");
-                    int withdrawAmount = sc.nextInt();
+                    int withdrawAmount = scanner.nextInt();
                     bankAccount.withdraw(withdrawAmount);
                     break;
 

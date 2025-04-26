@@ -3,17 +3,17 @@ package com.gevernova.arrays.leveltwo;
 import java.util.Scanner;
 public class Grade {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of students: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
         int[][] marks = new int[number][3];
         double[] percentages = new double[number];
         String[] grades = new String[number];
         for (int i = 0; i < number; i++) {
             System.out.println("\nEnter marks for Student " + (i + 1));
-            marks[i][0] = getValidMarks(sc, "Physics");
-            marks[i][1] = getValidMarks(sc, "Chemistry");
-            marks[i][2] = getValidMarks(sc, "Maths");
+            marks[i][0] = getValidMarks(scanner, "Physics");
+            marks[i][1] = getValidMarks(scanner, "Chemistry");
+            marks[i][2] = getValidMarks(scanner, "Maths");
             percentages[i] = (marks[i][0] + marks[i][1] + marks[i][2]) / 3.0;
             grades[i] = getGrade(percentages[i]);
         }
@@ -22,7 +22,7 @@ public class Grade {
                     String.format("%.2f", percentages[i]) + "%   | " + grades[i]);
         }
 
-        sc.close();
+        scanner.close();
     }
     public static int getValidMarks(Scanner sc, String subject) {
         int marks;

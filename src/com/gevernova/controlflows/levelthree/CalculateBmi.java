@@ -3,9 +3,9 @@ package com.gevernova.controlflows.levelthree;
 import java.util.Scanner;
 public class CalculateBmi {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        double weight = sc.nextInt();
-        double height = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        double weight = scanner.nextInt();
+        double height = scanner.nextInt();
         double bmi=(weight/(height*height));
         if(bmi<=18.4){
             System.out.println("Underweight");

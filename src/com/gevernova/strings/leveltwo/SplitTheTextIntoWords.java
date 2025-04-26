@@ -10,18 +10,18 @@ public class SplitTheTextIntoWords {
         }
         return length;
     }
-    public static String[] word(String s){
-        int length=los(s);
+    public static String[] word(String string){
+        int length=los(string);
         int sc=0;
         for(int i=0;i<length;i++){
-            if(s.charAt(i)==' '){
+            if(string.charAt(i)==' '){
                 sc++;
             }
         }
         int [] si=new int[sc+1];
         int index=0;
         for(int i=0;i<length;i++){
-            if(s.charAt(i)== ' '){
+            if(string.charAt(i)== ' '){
                 si[index++]=i;
             }
         }
@@ -29,7 +29,7 @@ public class SplitTheTextIntoWords {
         String[] words=new String[sc+1];
         int start=0;
         for(int i=0;i<=sc;i++){
-            words[i]=s.substring(start,si[i]).trim();
+            words[i]= string.substring(start,si[i]).trim();
             start=si[i]+1;
         }
         return words;
@@ -47,8 +47,8 @@ public class SplitTheTextIntoWords {
     }
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String input=sc.nextLine();
+        Scanner scanner =new Scanner(System.in);
+        String input= scanner.nextLine();
         int length=los(input);
         String [] cwords=word(input);
         for(String w:cwords){

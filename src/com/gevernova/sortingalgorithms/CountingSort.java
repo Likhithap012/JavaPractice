@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class CountingSort {
 
     public static void countingSort(int[] ages) {
-        int n = ages.length;
+        int size = ages.length;
 
         // Age range is 10 to 18 → indices 0 to 8 in count array
         int range = 9; // 18 - 10 + 1
         int[] count = new int[range];
-        int[] output = new int[n];
+        int[] output = new int[size];
 
         // Step 1: Count the frequency of each age
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < size; i++) {
             count[ages[i] - 10]++;
         }
 
@@ -23,7 +23,7 @@ public class CountingSort {
         }
 
         // Step 3: Build the output array
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = size - 1; i >= 0; i--) {
             int age = ages[i];
             int position = count[age - 10] - 1;
             output[position] = age;
@@ -31,24 +31,24 @@ public class CountingSort {
         }
 
         // Step 4: Copy output to original array
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < size; i++) {
             ages[i] = output[i];
         }
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Input number of students
         System.out.print("Enter the number of students: ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         int[] ages = new int[n];
 
         // Input student ages
         System.out.println("Enter student ages (between 10 and 18):");
         for (int i = 0; i < n; i++) {
-            ages[i] = sc.nextInt();
+            ages[i] = scanner.nextInt();
         }
 
         // Apply counting sort

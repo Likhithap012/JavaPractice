@@ -38,29 +38,29 @@ public class VehicleRegistrationSystem {
 
     public static void main(String[] args) {
         // Create Vehicle objects
-        Object v1 = new Vehicle("Aarav Kumar", "Car", "MH12AB1234");
-        Object v2 = new Vehicle("Neha Verma", "Scooter", "DL05CD5678");
-        Object v3 = "Not a vehicle";
+        Object vehicleOne = new Vehicle("Aarav Kumar", "Car", "MH12AB1234");
+        Object vehicleTwo = new Vehicle("Neha Verma", "Scooter", "DL05CD5678");
+        Object vehicleThree = "Not a vehicle";
 
         // Display details only if the object is an instance of Vehicle
-        if (v1 instanceof Vehicle) {
-            ((Vehicle) v1).displayVehicleDetails();
+        if (vehicleOne instanceof Vehicle) {
+            ((Vehicle) vehicleOne).displayVehicleDetails();
         } else {
             System.out.println("v1 is not a Vehicle");
         }
 
         System.out.println();
 
-        if (v2 instanceof Vehicle) {
-            ((Vehicle) v2).displayVehicleDetails();
+        if (vehicleTwo instanceof Vehicle) {
+            ((Vehicle) vehicleTwo).displayVehicleDetails();
         } else {
             System.out.println("v2 is not a Vehicle");
         }
 
         System.out.println();
 
-        if (v3 instanceof Vehicle) {
-            ((Vehicle) v3).displayVehicleDetails();
+        if (vehicleThree instanceof Vehicle) {
+            ((Vehicle) vehicleThree).displayVehicleDetails();
         } else {
             System.out.println("v3 is not a Vehicle");
         }
@@ -70,8 +70,8 @@ public class VehicleRegistrationSystem {
         Vehicle.updateRegistrationFee(650);
 
         // Display updated details
-        if (v1 instanceof Vehicle) {
-            ((Vehicle) v1).displayVehicleDetails();
+        if (vehicleOne instanceof Vehicle) {
+            ((Vehicle) vehicleOne).displayVehicleDetails();
         }
     }
 }

@@ -4,16 +4,14 @@ import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class FileReadingComparison {
 
     // Method to read a file using FileReader (Character Stream)
     public static void readUsingFileReader(String filePath) {
         try (FileReader fr = new FileReader(filePath)) {
-            int ch;
-            while ((ch = fr.read()) != -1) {
+            int character;
+            while ((character = fr.read()) != -1) {
                 // Simulate some processing on the character (optional)
             }
         } catch (IOException e) {
@@ -24,8 +22,8 @@ public class FileReadingComparison {
     // Method to read a file using InputStreamReader (Byte Stream)
     public static void readUsingInputStreamReader(String filePath) {
         try (InputStreamReader isr = new InputStreamReader(new FileInputStream(filePath))) {
-            int ch;
-            while ((ch = isr.read()) != -1) {
+            int character;
+            while ((character = isr.read()) != -1) {
                 // Simulate some processing on the character (optional)
             }
         } catch (IOException e) {

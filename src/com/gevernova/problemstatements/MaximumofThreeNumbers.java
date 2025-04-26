@@ -3,28 +3,28 @@ import java.util.Scanner;
 
 public class MaximumofThreeNumbers {
     public static void main(String[] args) {
-        int num1 = getInput("Enter first number: ");
-        int num2 = getInput("Enter second number: ");
-        int num3 = getInput("Enter third number: ");
+        int numberOne = getInput("Enter first number: ");
+        int numberTwo = getInput("Enter second number: ");
+        int numberThree = getInput("Enter third number: ");
 
-        int max = findMaximum(num1, num2, num3);
+        int maximum = findMaximum(numberOne, numberTwo, numberThree);
 
-        System.out.println("The maximum number is: " + max);
+        System.out.println("The maximum number is: " + maximum);
     }
     public static int getInput(String message) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print(message);
-        return sc.nextInt();
+        return scanner.nextInt();
     }
 
-    public static int findMaximum(int a, int b, int c) {
-        int max = a;
-        if (b > max) {
-            max = b;
+    public static int findMaximum(int numberOne, int numberTwo, int numberThree) {
+        int maximum = numberOne;
+        if (numberTwo > maximum) {
+            maximum = numberTwo;
         }
-        if (c > max) {
-            max = c;
+        if (numberThree > maximum) {
+            maximum = numberThree;
         }
-        return max;
+        return maximum;
     }
 }

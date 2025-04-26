@@ -1,7 +1,7 @@
 package com.gevernova.strings.levelthree;
 
 import java.util.Scanner;
-public class charfrequency {
+public class CharFrequency {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

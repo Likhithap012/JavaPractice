@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class BonusOfEmployee {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int salary= sc.nextInt();
-        int year= sc.nextInt();
+        Scanner scanner =new Scanner(System.in);
+        int salary= scanner.nextInt();
+        int year= scanner.nextInt();
         if (year > 5) {
             double bonus = 0.05 * salary; // 5% of salary
             System.out.printf("The employee is eligible for a bonus of: %.2f%n", bonus);

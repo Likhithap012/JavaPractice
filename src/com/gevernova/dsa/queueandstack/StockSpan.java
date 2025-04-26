@@ -6,14 +6,14 @@ public class StockSpan {
 
     // Function to calculate the stock span
     public static int[] calculateSpan(int[] prices) {
-        int n = prices.length;
-        int[] span = new int[n];
+        int length = prices.length;
+        int[] span = new int[length];
 
         // Stack to store indices of the stock prices
         Stack<Integer> stack = new Stack<>();
 
         // Loop through all stock prices
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < length; i++) {
             // Pop elements from the stack while the price at the top is less than or equal to the current price
             while (!stack.isEmpty() && prices[stack.peek()] <= prices[i]) {
                 stack.pop();

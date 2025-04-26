@@ -3,15 +3,15 @@ package com.gevernova.dsa.timeandspacecomplexity;
 public class FibonacciComparison {
 
     // Recursive approach to compute Fibonacci (O(2^n))
-    public static int fibonacciRecursive(int n) {
-        if (n <= 1) return n;
-        return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+    public static int fibonacciRecursive(int number) {
+        if (number <= 1) return number;
+        return fibonacciRecursive(number - 1) + fibonacciRecursive(number - 2);
     }
 
     // Iterative approach to compute Fibonacci (O(N))
-    public static int fibonacciIterative(int n) {
+    public static int fibonacciIterative(int number) {
         int a = 0, b = 1, sum;
-        for (int i = 2; i <= n; i++) {
+        for (int i = 2; i <= number; i++) {
             sum = a + b;
             a = b;
             b = sum;

@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class CountDownUsingFor {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        for(int i=n;i>0;i--){
+        Scanner scanner =new Scanner(System.in);
+        int number = scanner.nextInt();
+        for(int i = number; i>0; i--){
             System.out.println(i);
         }
     }

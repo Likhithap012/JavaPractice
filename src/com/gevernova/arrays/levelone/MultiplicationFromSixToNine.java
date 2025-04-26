@@ -3,8 +3,8 @@ package com.gevernova.arrays.levelone;
 import java.util.Scanner;
 public class MultiplicationFromSixToNine {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int number= sc.nextInt();
+        Scanner scanner =new Scanner(System.in);
+        int number= scanner.nextInt();
         int result[]=new int[4];
         int j=0;
         for(int i=6;i<=9;i++){

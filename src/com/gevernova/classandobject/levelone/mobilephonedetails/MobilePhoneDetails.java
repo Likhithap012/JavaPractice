@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class MobilePhoneDetails {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Creating an object of MobilePhone
         MobilePhone phone = new MobilePhone();
 
         // Taking input from user
         System.out.print("Enter Brand: ");
-        phone.brand = sc.nextLine();
+        phone.brand = scanner.nextLine();
 
         System.out.print("Enter Model: ");
-        phone.model = sc.nextLine();
+        phone.model = scanner.nextLine();
 
         System.out.print("Enter Price: ");
-        phone.price = sc.nextDouble();
+        phone.price = scanner.nextDouble();
 
         // Displaying the phone details
         System.out.println("\n--- Mobile Phone Details ---");

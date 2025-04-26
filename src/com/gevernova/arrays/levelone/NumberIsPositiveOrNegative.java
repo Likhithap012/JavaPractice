@@ -3,10 +3,10 @@ package com.gevernova.arrays.levelone;
 import java.util.Scanner;
 public class NumberIsPositiveOrNegative {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner =new Scanner(System.in);
         int number[]=new int[5];
         for(int i=0;i<5;i++){
-            number[i]=sc.nextInt();
+            number[i]= scanner.nextInt();
         }
         for(int i=0;i<5;i++){
             if(number[i]>0){

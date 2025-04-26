@@ -44,7 +44,7 @@ public class DeleteOperations {
 
         Node temp = head;
         int count = 0;
-        while (temp != null && count < pos - 1) {
+        while (temp.next != null && count < pos - 1) {
             temp = temp.next;
             count++;
         }

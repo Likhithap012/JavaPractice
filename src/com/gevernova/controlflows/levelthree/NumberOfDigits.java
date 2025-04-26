@@ -3,15 +3,15 @@ package com.gevernova.controlflows.levelthree;
 import java.util.Scanner;
 public class NumberOfDigits {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int number = sc.nextInt();
-        int cnt=0;
+        int number = scanner.nextInt();
+        int count =0;
         while(number>0){
             int num=number%10;
             number=number/10;
-            cnt++;
+            count++;
         }
-        System.out.println(cnt);
+        System.out.println(count);
     }
 }

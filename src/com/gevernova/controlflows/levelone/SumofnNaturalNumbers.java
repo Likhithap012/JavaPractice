@@ -3,15 +3,15 @@ package com.gevernova.controlflows.levelone;
 import java.util.Scanner;
 public class SumofnNaturalNumbers {
     public static void main(String [] args){
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        if(n>=0){
-            System.out.println(n +" is a natural number");
+        Scanner scanner =new Scanner(System.in);
+        int number = scanner.nextInt();
+        if(number >=0){
+            System.out.println(number +" is a natural number");
         }
         else{
-            System.out.println(n+ "is not a natural number");
+            System.out.println(number + "is not a natural number");
         }
-        int r=(n*(n+1))/2;
-        System.out.println(r);
+        int result =(number *(number +1))/2;
+        System.out.println(result);
     }
 }

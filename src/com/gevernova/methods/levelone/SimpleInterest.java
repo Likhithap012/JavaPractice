@@ -11,12 +11,12 @@ public class SimpleInterest {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // Create a Scanner object for input
+        Scanner scanner = new Scanner(System.in); // Create a Scanner object for input
 
         // Taking principle, rate, and time as input from the user
-        int principle = sc.nextInt();
-        int rate = sc.nextInt();
-        int time = sc.nextInt();
+        int principle = scanner.nextInt();
+        int rate = scanner.nextInt();
+        int time = scanner.nextInt();
 
         // Calling the simpleInterest method with the user inputs
         int result = simpleInterest(principle, rate, time);

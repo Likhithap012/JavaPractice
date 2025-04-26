@@ -5,29 +5,29 @@ import java.util.Scanner;
 public class RotatedSortedelement {
     public static void main(String[] args) {
         // Create a Scanner object for user input
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Read the size of the array from the user
-        int size = sc.nextInt();
+        int size = scanner.nextInt();
 
         // Declare and initialize the array with the given size
-        int[] arr = new int[size];
+        int[] array = new int[size];
 
         // Read elements into the array
         for (int i = 0; i < size; i++) {
-            arr[i] = sc.nextInt();
+            array[i] = scanner.nextInt();
         }
         int low=0;
         int high=size-1;
         while(low<high){
             int mid=(low+high)/2;
-            if(arr[mid]>arr[high]){
+            if(array[mid]> array[high]){
                 low=mid+1;
             }else{
                 high=mid;
             }
         }
         System.out.println(low);
-        System.out.println(arr[low]);
+        System.out.println(array[low]);
     }
 }

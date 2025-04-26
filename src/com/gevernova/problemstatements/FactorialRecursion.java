@@ -4,24 +4,24 @@ import java.util.Scanner;
 
 public class FactorialRecursion {
     public static void main(String[] args) {
-        int num = getInput();
-        long result = factorial(num);
-        displayResult(num, result);
+        int number = getInput();
+        long result = factorial(number);
+        displayResult(number, result);
     }
 
     public static int getInput() {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        return sc.nextInt();
+        return scanner.nextInt();
     }
 
-    public static long factorial(int n) {
-        if (n == 0 || n == 1) return 1;
-        return n * factorial(n - 1);
+    public static long factorial(int number) {
+        if (number == 0 || number == 1) return 1;
+        return number * factorial(number - 1);
     }
 
-    public static void displayResult(int num, long result) {
-        System.out.println("Factorial of " + num + " is: " + result);
+    public static void displayResult(int number, long result) {
+        System.out.println("Factorial of " + number + " is: " + result);
     }
 }
 

@@ -12,8 +12,8 @@ public class MaximumNumberOfHandshakes {
         Scanner sc = new Scanner(System.in); // Create a Scanner object for input
 
         // Taking n input from the user
-        int n = sc.nextInt();
-        int ans=numberOfHandshakes(n);
+        int number = sc.nextInt();
+        int ans=numberOfHandshakes(number);
         System.out.println(ans);
     }
 }

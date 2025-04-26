@@ -3,23 +3,23 @@ package com.gevernova.arrays.leveltwo;
 import java.util.Scanner;
 public class BmiTwoD {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of persons: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
         double[][] personData = new double[number][3];
         String[] weightStatus = new String[number];
         for (int i = 0; i < number; i++) {
             System.out.println("\nEnter details for person " + (i + 1));
             do {
                 System.out.print("Enter height (in meters, positive value): ");
-                personData[i][0] = sc.nextDouble();
+                personData[i][0] = scanner.nextDouble();
                 if (personData[i][0] <= 0) {
                     System.out.println("Invalid height! Please enter a positive value.");
                 }
             } while (personData[i][0] <= 0);
             do {
                 System.out.print("Enter weight (in kg, positive value): ");
-                personData[i][1] = sc.nextDouble();
+                personData[i][1] = scanner.nextDouble();
                 if (personData[i][1] <= 0) {
                     System.out.println("Invalid weight! Please enter a positive value.");
                 }

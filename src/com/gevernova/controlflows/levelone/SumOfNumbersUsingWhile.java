@@ -6,11 +6,11 @@ public class SumOfNumbersUsingWhile {
     public static void main(String[] args) {
         double total = 0.0;
         double number;
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner =new Scanner(System.in);
         System.out.println("Enter numbers to sum (enter 0 to stop):");
         while (true) {
             System.out.print("Enter a number: ");
-            number = sc.nextDouble();
+            number = scanner.nextDouble();
             if (number == 0 || number<0) {
                 break;
             }

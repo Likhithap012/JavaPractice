@@ -4,13 +4,13 @@ public class CircularTour {
 
     // Function to find the starting petrol pump index
     public static int getStartingPump(int[] petrol, int[] distance) {
-        int n = petrol.length;
+        int length = petrol.length;
         int totalPetrol = 0;
         int currentPetrol = 0;
         int start = 0;
 
         // Traverse all the petrol pumps
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < length; i++) {
             totalPetrol += petrol[i] - distance[i];
             currentPetrol += petrol[i] - distance[i];
 
