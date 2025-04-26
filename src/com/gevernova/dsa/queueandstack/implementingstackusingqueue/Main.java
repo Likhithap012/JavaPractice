@@ -1,16 +1,16 @@
 package com.gevernova.dsa.queueandstack.implementingstackusingqueue;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
-        Stack s=new Stack();
-        s.push(3);
-        s.push(2);
-        s.push(4);
-        s.push(1);
-        System.out.println("Top of the stack: " + s.top());
-        System.out.println("Size of the stack before removing element: " + s.size());
-        System.out.println("The deleted element is: " + s.pop());
-        System.out.println("Top of the stack after removing element: " + s.top());
-        System.out.println("Size of the stack after removing element: " + s.size());
+        Stack stack =new Stack();
+        stack.push(3);
+        stack.push(2);
+        stack.push(4);
+        stack.push(1);
+        System.out.println("Top of the stack: " + stack.top());
+        System.out.println("Size of the stack before removing element: " + stack.size());
+        System.out.println("The deleted element is: " + stack.pop());
+        System.out.println("Top of the stack after removing element: " + stack.top());
+        System.out.println("Size of the stack after removing element: " + stack.size());
     }
 }
