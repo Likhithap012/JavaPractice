@@ -17,8 +17,8 @@ public class LegacyAPI {
 class Main {
     public static void main(String[] args) {
         LegacyAPI api = new LegacyAPI();
-        api.oldFeature();  // ⚠️ Should show a warning in IDE
-        api.newFeature();  // ✅ Recommended usage
+        api.oldFeature();  //  Should show a warning in IDE
+        api.newFeature();  // Recommended usage
     }
 }
 
